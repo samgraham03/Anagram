@@ -1,7 +1,8 @@
 #include "Anagram.hpp"
+#include "LinkedList.hpp"
 #include <iostream>
 
-// g++ driver.cpp Anagram.cpp
+// g++ driver.cpp Anagram.cpp LinkedList.cpp
 
 void introduction() {
     std::cout << "Enter \"ANAGRAM\" to begin testing strings" << std::endl;
@@ -14,7 +15,7 @@ int main() {
     introduction();
 
     std::string cmd;
-    std::string * stringSequence = new std::string[2]; // Temp placeholder for dynamic approach
+    std::string *stringSequence = new std::string[2]; // Temp placeholder for dynamic approach
 
     while (std::cin >> cmd) {
         if (cmd == "ANAGRAM" || cmd == "Anagram" || cmd == "anagram") {
